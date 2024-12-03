@@ -1,0 +1,31 @@
+.header-inner{
+   max-width: 1200px;
+   height: 110px; 
+   margin-left: auto;
+   margin-right: auto;
+   padding-left: 40px;
+   padding-right: 40px;
+   display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+moko
+
+.background {
+    background-image: url('jpeg/仙台育英学園沖縄高等学校.jpeg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+  }
+  
