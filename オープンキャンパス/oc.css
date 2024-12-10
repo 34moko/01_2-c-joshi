@@ -16,16 +16,11 @@
 
 
 
-
-
-
-
-moko
-
 .background {
     background-image: url('jpeg/仙台育英学園沖縄高等学校.jpeg');
     background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
+    background: size 100%; cover;
+    background: position 100%;center;
+    background-repeat
   }
   
