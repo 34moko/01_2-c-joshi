@@ -1,87 +1,11 @@
-@charset "utf-8";
-
-*,
-::before,
-::after{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+#sample1 img {
+  width: 300px;
+  height: 200px;
 }
-
-ul,
-ol{
-    list-style: none;
+#sample1 a:hover img {
+  opacity: 0.8;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80); /* for IE 4以上 */
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80); /* for IE 8以上 */
+  background: rgb(165, 122, 122)(10, 0, 0);
 }
-header{
-   width: 100%;
-   padding: auto;
-   background-color: #00008b;
-}
-body{
-    font-family: sans-serif;
-    font-size: 16px;
-    color: #000000;
-    line-height: 1;
-}
-
-
-
-
-
-/* ポラロイド写真 */
-.polaroid-wrapper {
-  display: flex; /* 画像を横並びにする */
-  justify-content: space-between;
-}
-.polaroid {
-  background-color: #fff; /* フレームの色 */
-  border: 1px solid #ccc; /* ボーダー */
-  padding: 10px 10px 20px; /* フレームの内側の余白 */
-  margin-bottom: 60px; /* フレーム下の余白 */
-  box-shadow: 0 10px 8px -6px #bebebe; /* ポラロイドに影をつける */
-  display: inline-block;
-  max-width: 100%;
-  box-sizing: border-box;
-  width: 49%; /* ポラロイドの幅 */
-  position: relative; /* マスキングテープ用 */
-}
-.polaroid img {
-  display: block;
-  margin: 0 auto; /* 画像を中央寄せ */
-}
-.polaroid-caption {
-  color: #757575; /* 文字色 */
-  font-size: 16px; /* 文字サイズ */
-  padding-top: 20px; /* 文字上の余白 */
-  text-align: center; /* 文字を中央寄せ */
-}
-/* マスキングテープ */
-.masking-tape {
-  position: absolute;
-  top: -20px; /* マステの上からの位置 */
-  left: 30%; /* マステの左からの位置 */
-  width: 100px; /* マステの幅 */
-  height: 30px; /* マステの高さ */
-  border-left: 2px dotted rgba(0,0,0,.1); /* マステの左のギザギザ */
-  border-right: 2px dotted rgba(0,0,0,.1); /* マステの右のギザギザ */
-  box-shadow: 0 0 5px rgba(0,0,0,.2); /* マステに影をつける */
-  transform: rotate(-4deg); /* マステを回転させる */
-  padding: 5px 15px; /* マステの内側の余白 */
-  background-color: #FAFF07; /* マステの色 */
-  color: #333; /* 文字色 */
-  font-size: 20px; /* 文字サイズ */
-  line-height: 1.4; /* 文字の行間 */
-  text-align: center; /* 文字を中央寄せ */
-}
-
-/* 767px（iPad）以下では縦並び */
-@media screen and (max-width: 767px) {
-.polaroid-wrapper {
-  display: block; /* 画像の横並びを解除 */
-}
-.polaroid {
-  width: 100%; /* ポラロイドの幅 */
-}
-}
-
 
