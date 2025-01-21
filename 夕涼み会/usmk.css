@@ -12,6 +12,8 @@ h1{
 h4{
   text-align: center;
 }
+/*タイトル　アニメーション*/
+
 /*写真*/
 .msg{
   font-size: 20px;
@@ -40,10 +42,26 @@ h4{
   border:double 5px #ffffff;
  }
 
- 
+/*写真の配置（中央に）*/
+ul {
+  display: flex;
+}
+li {
+  width: 30%;
+  text-align: center;
+}
+img {
+  width: 50%; /* 親であるliの幅に対しての割合 */
+}
+
+ul,
+ol{
+  list-style:none;
+} 
+
 /*フッター*/
 footer{
-  background-color: ;ckground-color: midnightblue;
+  background-color: midnightblue;
 }
 
 .c-btn,
@@ -56,3 +74,34 @@ footer{
  body {
   background-color: #8bf1f1;
   
+  /*背景テスト*/
+  body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+
+
+@keyframes textanimation {
+    0% {
+        transform: translateY(2em);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}

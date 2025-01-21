@@ -1,1 +1,4 @@
-
+body {
+    background-image: url("/文化祭/jpeg/プログラミング文化祭.jpg");
+    background-size: cover;
+  }
