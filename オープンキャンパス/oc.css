@@ -72,10 +72,10 @@ ol{
    display:block;
  }
 
- 
+ /*トップに戻るホバー*/
  .btn-box{
    position: absolute;
-   top: 300%;
+   top: 400%;
    left: 50%;
    transform: translate(-50%, -50%);
    margin: 0;
@@ -102,3 +102,13 @@ ol{
    color: #f15a4a;
  }
 
+ .centering_parent {
+  padding: 20px;              /* 余白指定 */
+  text-align:  center;        /* 中央寄せ */
+  background-color:  #dddddd00;    /* 背景色指定 */
+  height: 100px;              /* 高さ指定 */
+}
+
+.centering_item {
+  background-color: #FFEB3B;  /* 背景色指定 */
+}
