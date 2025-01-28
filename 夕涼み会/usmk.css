@@ -53,16 +53,37 @@ li {
 img {
   width: 50%; /* 親であるliの幅に対しての割合 */
 }
-
 ul,
 ol{
   list-style:none;
 } 
+/*写真の大きさを揃える*/
+img{
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+/*写真ズーム*/
+.img {
+  display: inline-block;
+  overflow: hidden;
+}
+.img {
+  display: block;
+  transition-duration: .5s;
+}
+.img:hover {
+  transform: scale(1.2);
+}
 
 /*フッター*/
 footer{
   background-color: midnightblue;
+  color: #ffffff
+  color: #ffa001
 }
+
+
 
 .c-btn,
 .c-bnr,
@@ -104,4 +125,31 @@ footer{
     100% {
         transform: translateY(0);
     }
+}
+
+/*写真アニメーション*/
+//HTML
+<div class="url(jpeg/usmk画像1.png)"></div>
+ 
+//CSS
+.夕涼み会/jpeg/usmk画像1.png {
+  background: linear-gradient(to right, #362ae0 0%,#3b79cc 50%,#42d3ed 100%);
+  width: 50px;
+  height: 50px;
+  opacity: 0;
+  padding-bottom: 40px;
+}
+.kurukuru.is-animated {
+  animation: kurukuru 2.4s ease-out;
+  opacity: 1;
+}
+@keyframes kurukuru {
+  0%{
+    transform: rotateY(0) translateY(40px);
+    opacity: 0;
+  }
+  100%{
+    transform: rotateY(360deg) translateY(0);
+    opacity: 1;
+  }
 }

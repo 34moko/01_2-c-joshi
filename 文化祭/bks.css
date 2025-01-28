@@ -2,3 +2,9 @@ body {
     background-image: url("/文化祭/jpeg/プログラミング文化祭.jpg");
     background-size: cover;
   }
+  p.Eスポーツ img {
+    width: 200px;
+    }
+    p.投資部 img {
+      width: 200px;
+      }
