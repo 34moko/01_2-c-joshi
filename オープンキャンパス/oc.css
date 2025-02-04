@@ -84,7 +84,7 @@ button{
       /* 背景画像が読み込まれる前に表示される背景のカラー */
       background-color: #5f5f5f;
 
-      background-color:rgba(205, 221, 255, 0.404);
+      background-color:rgba(255, 255, 255, 0.404);
       
       background-blend-mode:lighten;
     }
@@ -149,6 +149,30 @@ button{
   text-align:  center;        /* 中央寄せ */
   background-color:  #dddddd00;    /* 背景色指定 */
   height: 100px;              /* 高さ指定 */
+}
+
+.box26 {
+  position: relative;
+  margin: 2em 0;
+  padding: 0.5em 1em;
+  border: solid 3px #95ccff;
+  border-radius: 8px;
+}
+.box26 .box-title {
+  position: absolute;
+  display: inline-block;
+  top: -13px;
+  left: 10px;
+  padding: 0 9px;
+  line-height: 1;
+  font-size: 19px;
+  background: #ffffff00;
+  color: #95ccff;
+  font-weight: bold;
+}
+.box26 p {
+  margin: 0; 
+  padding: 0;
 }
 
 
