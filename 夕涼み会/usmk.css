@@ -60,7 +60,7 @@ ol{
 /*写真の大きさを揃える*/
 img{
   width: 100%;
-  height: 220px;
+  height: 140px;
   object-fit: cover;
 }
 /*写真ズーム*/
@@ -79,8 +79,7 @@ img{
 /*フッター*/
 footer{
   background-color: midnightblue;
-  color: #ffffff
-  color: #ffa001
+  color: #ffffff;
 }
 
 
@@ -92,9 +91,10 @@ footer{
   transition: .2s cubic-bezier(0.45, 0, 0.55, 1);
 }
 
- body {
+body {
   background-color: #8bf1f1;
-  
+}
+
   /*背景テスト*/
   body {
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
@@ -128,17 +128,7 @@ footer{
 }
 
 /*写真アニメーション*/
-//HTML
-<div class="url(jpeg/usmk画像1.png)"></div>
- 
-//CSS
-.夕涼み会/jpeg/usmk画像1.png {
-  background: linear-gradient(to right, #362ae0 0%,#3b79cc 50%,#42d3ed 100%);
-  width: 50px;
-  height: 50px;
-  opacity: 0;
-  padding-bottom: 40px;
-}
+
 .kurukuru.is-animated {
   animation: kurukuru 2.4s ease-out;
   opacity: 1;

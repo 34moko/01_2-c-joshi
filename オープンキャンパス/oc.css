@@ -106,7 +106,7 @@ button{
  }
 
  .img-float-left{
-   float:left;
+   float::left
    padding:0 !important;
    margin:0 1em 1em 0;
  }
@@ -175,6 +175,12 @@ button{
   padding: 0;
 }
 
+.bady{
+  padding-top: 10px;
+  padding-right: 100px;
+  padding-bottom: 10px;
+  padding-left: 100px;
+}
 
  /*エム
    
