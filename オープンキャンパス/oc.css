@@ -1,5 +1,17 @@
 
-
+.html {
+   background-color: rgba(255, 255, 255, 0); /* 周囲の背景色 */
+}
+.naka{
+   margin: 10px 10px 10px 10px ;   /* 外側の余白を30pxに */
+   padding: 100px;   /* 内側の余白を消す */
+   background-color: rgba(255, 255, 255, 0); /* 本文部分の背景色 */
+}
+section{
+  margin: 10px 100px 100px 10px ;   /* 外側の余白を30pxに */
+  padding: 100px;   /* 内側の余白を消す */
+  background-color: rgba(255, 255, 255, 0); /* 本文部分の背景色 */
+}
 
 
 .header-inner{
@@ -18,7 +30,7 @@ ol{
 /*ヘッダー右寄せ */
 .box{
   margin-bottom: 20px;
-  border: #ddd 0px solid;
+  border: #ffffff 0px solid;
 }
 
 
@@ -41,14 +53,14 @@ li:last-child {
 header{
   width:100%;
   height:100px;
-  background-color:#dcdcdc;
+  background-color:#ffffff;
   display:flex;
   align-items:center;
 }
 
 
 button{
-  background-color:white;
+  background-color:rgba(255, 255, 255, 0);
   border:none;
   padding:10px 20px;
 /* margin-rightをautoにすることで右寄せ出来ます */
@@ -82,9 +94,9 @@ button{
       background-size: cover;
        
       /* 背景画像が読み込まれる前に表示される背景のカラー */
-      background-color: #5f5f5f;
+      background-color: #ffffff00;
 
-      background-color:rgba(255, 255, 255, 0.404);
+      background-color:#ffffff81(255, 255, 255, 0.404);
       
       background-blend-mode:lighten;
     }
@@ -117,7 +129,7 @@ button{
  /*トップに戻るホバー*/
  .btn-box{
    position: absolute;
-   top: 400%;
+   top: 500%;
    left: 50%;
    transform: translate(-50%, -50%);
    margin: 0;
@@ -151,36 +163,30 @@ button{
   height: 100px;              /* 高さ指定 */
 }
 
-.box26 {
-  position: relative;
-  margin: 2em 0;
-  padding: 0.5em 1em;
-  border: solid 3px #95ccff;
-  border-radius: 8px;
-}
-.box26 .box-title {
-  position: absolute;
-  display: inline-block;
-  top: -13px;
-  left: 10px;
-  padding: 0 9px;
-  line-height: 1;
-  font-size: 19px;
-  background: #ffffff00;
-  color: #95ccff;
-  font-weight: bold;
-}
+
 .box26 p {
   margin: 0; 
   padding: 0;
 }
 
-.bady{
-  padding-top: 10px;
-  padding-right: 100px;
-  padding-bottom: 10px;
-  padding-left: 100px;
+
+header {
+  width: 100%;
+  background: #ffffff;
+}
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: #ffffff;
 }
 
- /*エム
+
+
+
+
+
+ /*エム*/
+ 
    
