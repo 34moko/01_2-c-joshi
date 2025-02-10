@@ -14,17 +14,16 @@ section{
 }
 
 
-.header-inner{
-   height: 110px; 
-   margin-left: auto;
-   margin-right: auto;
-   padding-left: 10px;
-   padding-right: 10px;
-   display: flex;
-   align-items: center;
+.hedda-{
+  height: 110px; 
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
 }
 ol{
-   list-style: none;
+  list-style: none;
 }
 
 /*ヘッダー右寄せ */
@@ -33,30 +32,22 @@ ol{
   border: #ffffff 0px solid;
 }
 
-
-ul.list02 {
-display: flex;
-justify-content: flex-end;
-align-items: right;
-list-style: none;
-}
-
-li {
-  padding: 0 100px;
+/*ヘッダー*/
+.list02 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: right;
+  list-style: none;
+  padding: 0px 10px 0px;
   border-right: #ddd 4px solid;
-}
+  }
+  
+  li:last-child {
+    border-right: none;
+  }
+  
 
-li:last-child {
-  border-right: none;
-}
 
-header{
-  width:100%;
-  height:100px;
-  background-color:#ffffff;
-  display:flex;
-  align-items:center;
-}
 
 
 button{
@@ -87,20 +78,24 @@ button{
       /* 画像をタイル状に繰り返し表示しない */
       background-repeat: no-repeat;
        
-      /* コンテンツの高さが画像の高さより大きい時、動かないように固定 */
+      /*固定 */
       background-attachment: fixed;
        
-      /* 表示するコンテナの大きさに基づいて、背景画像を調整 */
+      /* 背景画像を調整 */
       background-size: cover;
        
-      /* 背景画像が読み込まれる前に表示される背景のカラー */
+      /* 読み込まれる前に表示される背景のカラー */
       background-color: #ffffff00;
 
       background-color:#ffffff81(255, 255, 255, 0.404);
       
       background-blend-mode:lighten;
+
+      /*背景投下の調節*/
+      background-color: rgba(255, 255, 255, 0.685);
     }
 
+    
 
 .h1 {
   color: rgb(156, 37, 37);
@@ -108,8 +103,6 @@ button{
 
  .lion{
    padding:0 !important;
- }
- .lion{
    animation: bound .3s ease infinite alternate;
  }
  @keyframes bound{
@@ -118,8 +111,8 @@ button{
  }
 
  .img-float-left{
-   float::left
-   padding:0 !important;
+   float:left
+   padding 0 !important;
    margin:0 1em 1em 0;
  }
  .img-float-left img{
@@ -173,6 +166,8 @@ button{
 header {
   width: 100%;
   background: #ffffff;
+  position: fixed;
+  top: 0;
 }
 footer {
   position: fixed;
@@ -183,8 +178,43 @@ footer {
 }
 
 
+.lion{
+  text-align: left;  /* 文章を左寄せする(※) */
+  float: left;     /* 左端に寄せて、後続を右側へ回り込ませる */
+}
+.img-float  {
+  text-align: right; /* 文章を右寄せする */
+}
 
-
+/*リオン君吹き出し*/
+.box23{
+  position: relative;
+  margin: 2em 0 2em 40px;
+  padding: 8px 15px;
+  background: #fff0c6;
+  border-radius: 30px;
+}
+.box23:before{font-family: 
+  content: "\f111";
+  position: absolute;
+  font-size: 15px;
+  left: -40px;
+  bottom: 0;
+  color: #fff0c6;
+}
+.box23:after{
+  font-family: ;
+  content: "\f111";
+  position: absolute;
+  font-size: 23px;
+  left: -23px;
+  bottom: 0;
+  color: #fff0c6;
+}
+.box23 p {
+  margin: 0; 
+  padding: 0;
+}
 
 
  /*エム*/
