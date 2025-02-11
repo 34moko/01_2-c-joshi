@@ -1,10 +1,14 @@
 
 
 img {
-  width: 200px;   /* 任意の幅 */
-  height: 200px;  /* 任意の高さ */
-  object-fit: cover;
+  max-width: 200px;
+  max-height: 200px;
+  width: auto;
+  height: auto;
 }
+
+
+
 
 .box {
   width: 200px;  /* 横幅を200pxに指定 */

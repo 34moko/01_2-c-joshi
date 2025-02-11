@@ -7,20 +7,52 @@
    padding: 100px;   /* 内側の余白を消す */
    background-color: rgba(255, 255, 255, 0); /* 本文部分の背景色 */
 }
+
 section{
   margin: 10px 100px 100px 10px ;   /* 外側の余白を30pxに */
   padding: 100px;   /* 内側の余白を消す */
   background-color: rgba(255, 255, 255, 0); /* 本文部分の背景色 */
 }
 
+/*ヘッダーお試し*/
+header {
+  position: fixed; /*ヘッダーを固定 */
+  width: 100%; 
+  height: 80px; 
+  padding: 20px 60px; 
+  box-sizing: border-box; 
+  background: linear-gradient(45deg, #005bac 0%, #009efd 100%);
+  top: 0; 
+  left: 0; 
+  display: flex; 
+  align-items: center; 
 
-.hedda-{
-  height: 110px; 
-  margin-left: 0px;
-  margin-right: 0px;
-  padding-left: 10px;
-  padding-right: 10px;
-  display: flex;
+ 
+ /* ロゴとメニューを横並びにする */
+  display: flex; 
+  justify-content:space-between;
+}
+
+header .nav .menu {
+  display: flex; 
+}
+
+header .nav .menu li {
+  list-style: none; 
+  margin-left: 40px;
+}
+
+header .nav .menu li a{
+ color: #fff100;
+ font-weight:bold;
+ text-decoration: none;
+}
+
+.hedda-taitoru{
+    color:#000000;
+  font-size:14px;
+  font-weight:bold;
+
 }
 
 ol{
@@ -33,45 +65,11 @@ ol{
   border: #ffffff 0px solid;
 }
 
-/*ヘッダー*/
-.list02 {
-  display: flex;
-  padding:10px;
-  border-right: #005bac 3px solid;
-  /*ヘッダー文字装飾*/
-    color:#000000;
-    font-size:25px;
-    font-weight:bold;
-    line-height:100%;
-    text-align:right; /* 文章を右寄せする- */
-  }
-
-  li:last-child {
-    border-right: none;
-  }
-  
-
-
-
-
-  button{
-    background-color:rgba(255, 255, 255, 0);
-    border:none;
-    padding:10px 20px;
-  /* margin-rightをautoにすることで右寄せ出来ます */
-    margin:0 20px 0 auto;
-  }
-
-
-
-
 .site-menu ul li{
    margin-right: 20px;
-}
-
-.site-menu ul{
    display: flex;
 }
+
    .background{
       /* 画像ファイルの指定 */
       background-image: url('jpeg/仙台育英学園沖縄高等学校.jpeg');
@@ -99,20 +97,7 @@ ol{
       background-color: rgba(255, 255, 255, 0.685);
     }
 
-    
 
-.h1 {
-  color: rgb(156, 37, 37);
-}
-
- .lion{
-   padding:0 !important;
-   animation: bound .3s ease infinite alternate;
- }
- @keyframes bound{
-   0%    {transform: translateY(0px);}
-   100%  {transform: translateY(-10px);}
- }
 
  .img-float-left{
    float:left
@@ -167,15 +152,25 @@ ol{
 }
 
 
-header {
-  width: 100%;
-  background: #ffffff;
-  position: fixed;
-  top: 0;
+
+
+.lion { 
+  margin-right: 20px; /* lion 側の右に余白を追加 */ 
+} 
+.syasinn { 
+  margin-left: 20px; /* syasinn 側の左に余白を追加 */
+}
+
+.bar-{
+  display: flex;
+}
+.gw{
+  padding: 10%;
 }
 
 
 
+/*オープンキャンパスの様子画像配置*/
 .lion{
   text-align: left;  /* 文章を左寄せする(※) */
   float: left;     /* 左端に寄せて、後続を右側へ回り込ませる */
@@ -184,34 +179,45 @@ header {
   text-align: right; /* 文章を右寄せする */
 }
 
-/*リオン君吹き出し*/
-.box23{
-  position: relative;
-  margin: 2em 0 2em 40px;
-  padding: 8px 15px;
-  background: #fff0c6;
-  border-radius: 30px;
-}
-.box23:before{font-family: 
-  position: absolute;
-  font-size: 15px;
-  left: -40px;
-  bottom: 0;
-  color: #fff0c6;
-}
-.box23:after{
-  font-family: ;
-  content: "\f111";
-  position: absolute;
-  font-size: 23px;
-  left: -23px;
-  bottom: 0;
-  color: #fff0c6;
-}
-.box23 p {
-  margin: 0; 
-  padding: 0;
-}
+/*リオン君関連*/
+   /*リオン君吹き出し*/
+   .box23{
+     position: relative;
+     margin: 2em 0 2em 40px;
+     padding: 8px 15px;
+     background: #fff0c6;
+     border-radius: 30px;
+   }    
+   .box23:before{font-family: 
+     position: absolute;
+     font-size: 15px;
+     left: -40px;
+     bottom: 0;
+     color: #fff0c6;
+   }
+   .box23:after{
+     font-family: ;
+     content: "\f111";
+     position: absolute;
+     font-size: 23px;
+     left: -23px;
+     bottom: 0;
+     color: #fff0c6;
+   }
+   .box23 p {
+     margin: 0; 
+     padding: 0;
+   }
+
+   /*リオン君バウンド*/
+    .lion{
+      padding:0 !important;
+      animation: bound .3s ease infinite alternate;
+ }
+ @keyframes .bound{
+   0%    {transform: translateY(0px);}
+   100%  {transform: translateY(-10px);}
+ }
 
 
  /*エム*/
