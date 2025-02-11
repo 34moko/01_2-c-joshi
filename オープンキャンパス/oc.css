@@ -16,12 +16,13 @@ section{
 
 .hedda-{
   height: 110px; 
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 0px;
+  margin-right: 0px;
   padding-left: 10px;
   padding-right: 10px;
   display: flex;
 }
+
 ol{
   list-style: none;
 }
@@ -35,13 +36,16 @@ ol{
 /*ヘッダー*/
 .list02 {
   display: flex;
-  justify-content: flex-end;
-  align-items: right;
-  list-style: none;
-  padding: 0px 10px 0px;
-  border-right: #ddd 4px solid;
+  padding:10px;
+  border-right: #005bac 3px solid;
+  /*ヘッダー文字装飾*/
+    color:#000000;
+    font-size:25px;
+    font-weight:bold;
+    line-height:100%;
+    text-align:right; /* 文章を右寄せする- */
   }
-  
+
   li:last-child {
     border-right: none;
   }
@@ -50,13 +54,13 @@ ol{
 
 
 
-button{
-  background-color:rgba(255, 255, 255, 0);
-  border:none;
-  padding:10px 20px;
-/* margin-rightをautoにすることで右寄せ出来ます */
-  margin:0 20px 0 auto;
-}
+  button{
+    background-color:rgba(255, 255, 255, 0);
+    border:none;
+    padding:10px 20px;
+  /* margin-rightをautoにすることで右寄せ出来ます */
+    margin:0 20px 0 auto;
+  }
 
 
 
@@ -169,13 +173,7 @@ header {
   position: fixed;
   top: 0;
 }
-footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background: #ffffff;
-}
+
 
 
 .lion{
@@ -195,7 +193,6 @@ footer {
   border-radius: 30px;
 }
 .box23:before{font-family: 
-  content: "\f111";
   position: absolute;
   font-size: 15px;
   left: -40px;

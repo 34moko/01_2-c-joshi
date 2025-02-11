@@ -1,14 +1,24 @@
-body {
-  background-image: url("jpeg/IMG_8786.jpg");
-  background-color:rgba(255,255,255,0.3);
-  background-blend-mode:lighten;
+
+
+img {
+  width: 200px;   /* 任意の幅 */
+  height: 200px;  /* 任意の高さ */
+  object-fit: cover;
 }
-  img{
-    width: 300px;
-  }
 
-  ul{
-    display: flex;
-    text-align: center;
+.box {
+  width: 200px;  /* 横幅を200pxに指定 */
+  height: 200px; /* 高さを200pxに指定 */
+  animation: image_anime 5s ease infinite; /* 5秒のアニメーションを繰り返す */
+}
+@keyframes image_anime {
+  0% {
+    background-image: url(/文化祭/jpeg/IMG_8786.jpg); /* 背景画像1を指定 */
   }
-
+  50% {
+    background-image: url(/文化祭/jpeg/ikueiokinawa_01.jpg); /* 背景画像2を指定 */
+  }
+  100% {
+    background-image: url(/文化祭/jpeg/キャラクター.png); /* 背景画像1を指定 */
+  }
+}
