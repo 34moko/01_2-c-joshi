@@ -59,17 +59,7 @@ ol{
   list-style: none;
 }
 
-/*ヘッダー右寄せ */
-.box{
-  margin-bottom: 20px;
-  border: #ffffff 0px solid;
-}
-
-.site-menu ul li{
-   margin-right: 20px;
-   display: flex;
-}
-
+/*背景画像*/
    .background{
       /* 画像ファイルの指定 */
       background-image: url('jpeg/仙台育英学園沖縄高等学校.jpeg');
@@ -98,6 +88,122 @@ ol{
     }
 
 
+/*参加してわかる本校のこと*/
+ .octitle{
+  color:#000000;
+  font-size:40px;
+  font-weight:bold;
+  line-height:150%;
+ }
+ .ocwotoosite{
+   color:#000000;
+   font-size:25px;
+   font-weight: normal;
+   line-height:150%;
+  }
+
+  .oc1{
+    color:#000000;
+    font-size:30px;
+    font-weight:bold;
+    line-height:150%;
+  }
+ .oc2{
+   color:#000000;
+   font-size:30px;
+   font-weight:bold;
+   line-height:150%;
+  }
+
+
+/*来場者の声*/
+.box {
+	display: flex;
+	justify-content: space-between;
+}
+
+.Asan{
+	display: flex;
+	justify-content: space-between;
+}
+.Asan{
+  position: relative;
+  background: #fff0cd;
+  box-shadow: 0px 0px 0px 5px #fff0cd;
+  border: dashed 2px white;
+  padding: 0.2em 0.5em;
+  color: #454545;
+}
+.Asan:after{
+  position: absolute;
+  content: '';
+  right: -7px;
+  top: -7px;
+  border-width: 0 15px 15px 0;
+  border-style: solid;
+  border-color: #ffdb88 #fff #ffdb88;
+  box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15);
+}
+.Asan p {
+  margin: 0; 
+  padding: 0;
+}
+.Bsan{
+	display: flex;
+	justify-content: space-between;
+}
+.Bsan{
+  position: relative;
+  background: #fff0cd;
+  box-shadow: 0px 0px 0px 5px #fff0cd;
+  border: dashed 2px white;
+  padding: 0.2em 0.5em;
+  color: #454545;
+}
+.Bsan:after{
+  position: absolute;
+  content: '';
+  right: -7px;
+  top: -7px;
+  border-width: 0 15px 15px 0;
+  border-style: solid;
+  border-color: #ffdb88 #fff #ffdb88;
+  box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15);
+}
+.Bsan p {
+  margin: 0; 
+  padding: 0;
+}
+.Csan{
+	display: flex;
+	justify-content: space-between;
+}
+.Csan{
+  position: relative;
+  background: #fff0cd;
+  box-shadow: 0px 0px 0px 5px #fff0cd;
+  border: dashed 2px white;
+  padding: 0.2em 0.5em;
+  color: #454545;
+}
+.Csan:after{
+  position: absolute;
+  content: '';
+  right: -7px;
+  top: -7px;
+  border-width: 0 15px 15px 0;
+  border-style: solid;
+  border-color: #ffdb88 #fff #ffdb88;
+  box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15);
+}
+.Csan p {
+  margin: 0; 
+  padding: 0;
+}
+
+
+
+
 
  .img-float-left{
    float:left
@@ -107,6 +213,8 @@ ol{
  .img-float-left img{
    display:block;
  }
+
+
 
  /*トップに戻るホバー*/
  .btn-box{
@@ -133,10 +241,13 @@ ol{
  }
  
  .btn:hover {
-   background-color: #fff;
+   background-color: #ffffff;
    border: 2px solid #f15a4a;
    color: #f15a4a;
  }
+
+
+
 
  .centering_parent {
   padding: 20px;              /* 余白指定 */
