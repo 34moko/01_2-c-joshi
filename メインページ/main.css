@@ -1,0 +1,9 @@
+H2{
+ min-height: 10em;
+ display: table-cell;
+ vertical-align: middle
+}
+
+/* 横並び */
+.gakkou {width: 100%; margin-left: auto;}
+.gakkou {margin-left: auto; width:257px;}

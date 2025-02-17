@@ -14,6 +14,11 @@ h4{
 }
 /*タイトル　アニメーション*/
 
+/*文字*/
+font{
+  color: #ffffff;
+}
+
 /*写真*/
 .msg{
   font-size: 20px;
@@ -91,6 +96,7 @@ body {
 	padding-right: 500%;
 }
 
+
 /*ヘッダー*/
 header{
   width: 100%;
@@ -103,10 +109,9 @@ footer{
   background-color: #ffffff;
 }
 
-/*文字*/
-.p{
-  font-family:meiryo;
-}
+
+
+
 
 .c-btn,
 .c-bnr,
@@ -118,7 +123,7 @@ footer{
 
   /*背景*/
   body {
-    background: linear-gradient(-45deg, rgb(232, 169, 252), #ffbbdb, #23a6d5, #23d5ab);
+    background: linear-gradient(-45deg, rgb(232, 169, 252), rgb(255, 179, 214), rgb(184, rgb(171, 255, 235)5), #23d5ab);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
     height: 100vh;

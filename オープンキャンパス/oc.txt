@@ -6,3 +6,35 @@ HPプログラミング：諸見里もこ　比嘉りおん
 
 イメージスライド：
 https://www.canva.com/design/DAGVNfl0084/pARu_R-VoCnErH-yYqFwFw/edit?utm_content=DAGVNfl0084&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+
+header {
+    position: fixed; /*← fixedで固定 */
+    width: 100%; 
+    height: 60px; 
+    background: #CCC; 
+    padding: 20px 60px; 
+    box-sizing: border-box;
+    top: 0; 
+    left: 0; 
+    display: flex; 
+    align-items: center; 
+  
+   /* ロゴとメニューを横並びにする */
+    display: flex; 
+    justify-content:space-between;
+}
+
+header .nav .menu {
+    display: flex; 
+}
+
+header .nav .menu li {
+    list-style: none; 
+    margin-left: 40px;
+}
+
+header .nav .menu li a{
+   color: #B78D4A;
+   font-weight:bold;
+   text-decoration: none;
+}

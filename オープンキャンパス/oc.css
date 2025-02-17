@@ -13,16 +13,16 @@ section{
   background-color: rgba(255, 255, 255, 0); /* 本文部分の背景色 */
 }
 
-/*ヘッダーお試し*/
+/*ヘッダー*/
 header {
   position: fixed; /*ヘッダーを固定 */
   width: 100%; 
   height: 80px; 
   padding: 60px 60px; 
   box-sizing: border-box; 
-  background: linear-gradient(45deg, #005bac 0%, #009efd 100%);
+  background: linear-gradient(45deg, #ffffff 0%, #005bac 100%);
   top: 0; 
-  left: 0; 
+  left: 0%; 
   display: flex; 
   align-items: center; 
 
@@ -48,19 +48,39 @@ header .nav .menu li a{
  text-decoration: none;
 }
 
-.hedda-taitoru{
-    color:#000000;
-  font-size:14px;
-  font-weight:bold;
 
+.hedderlogo{
+  position: fixed;
+  top: 0%; 
+  left: 0; 
+  align-items: left; 
 }
 
+.heddertitle{
+  position: fixed;
+  width: 25px; 
+  height: 25px; 
+  top: -2%; 
+  left: 10%;    
+  color:#000000;
+  font-size:20px;
+  font-weight:bold;
+}
 ol{
   list-style: none;
 }
 
+.maintitle{
+  color:#000000;
+  font-size:50px;
+  font-weight:bold;
+  text-align:  center;
+  background: linear-gradient(transparent 50%, #bde4f7 50%);
+  padding: 0 0.1em;
+}
+
 /*背景画像*/
-   .background{
+body{
       /* 画像ファイルの指定 */
       background-image: url('jpeg/仙台育英学園沖縄高等学校.jpeg');
        
@@ -183,12 +203,12 @@ ol{
 
  /*トップに戻るホバー*/
  .btn-box{
-   position: absolute;
-   top: 500%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-   margin: 0;
- }
+  position: absolute;
+  top: 393%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+}
  
  .btn {
    display: block;
@@ -201,7 +221,6 @@ ol{
    color: #fff;
    text-align: center;
    cursor: pointer;
-   -webkit-transition: 0.5s all;
    transition: 0.5s all;
  }
  
@@ -211,34 +230,10 @@ ol{
    color: #f15a4a;
  }
 
- /*概要*/
- .centering_parent {
-  padding: 20px;              /* 余白指定 */
-  text-align:  center;        /* 中央寄せ */
-  height: 100px;              /* 高さ指定 */
-}
-.gaiyou{
-  margin: 2em 0;
-  background: #60819e ;
-}
-.centering_title{
-  font-size: 1.2em;
-  background: #005bac ;
-  padding: 4px;
-  text-align: center;
-  color: #FFF;
-  font-weight: bold;
-  letter-spacing: 0.05em;
-}
-.centering_parent .p{
-  padding: 15px 20px;
-  margin: 0;
-  background: #ffffff;
-}
-
 /*概要試し*/
 .gaiyou {
   margin: 120px;
+  top: 100px;
   background: #dcefff;
 }
 .gaiyou .box-title {
@@ -246,7 +241,7 @@ ol{
   background: #005bac ;
   padding: 4px;
   text-align: center;
-  color: #FFF;
+  color: #ffffff;
   font-weight: bold;
   letter-spacing: 0.05em;
 }
@@ -273,7 +268,9 @@ text-align:  center;
 }
 
 
-
+footer{
+  background-color: #005bac;
+}
 
 .lion { 
   margin-right: 20px; /* lion 側の右に余白を追加 */ 
@@ -350,20 +347,7 @@ text-align:  center;
  }
 
 /*試しし*/
-.header {
-  display: flex; /*横並び*/
-}
-.header.image {
-  width: 640px; /*画像サイズ指定*/
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  position: relative;
-}
-.header .hedda-taitoru{
-  margin: 0 0 0 20px;
-  padding: 0;
-}
+
 
  /*エム*/
  
