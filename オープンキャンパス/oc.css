@@ -13,6 +13,23 @@ section{
   background-color: rgba(255, 255, 255, 0); /* 本文部分の背景色 */
 }
 
+/*リンク*/
+a{
+  text-decoration: none; 
+}
+
+/*リンクホバー*/
+.rink a:hover{
+  color : #005bac;
+}
+.box a:hover{
+  color : #005bac;
+}
+
+header .nav .menu li a:hover{
+  color : #ffffff;
+}
+
 /*ヘッダー*/
 header {
   position: fixed; /*ヘッダーを固定 */
@@ -25,6 +42,7 @@ header {
   left: 0%; 
   display: flex; 
   align-items: center; 
+  z-index: 100;
 
   /* ロゴとメニューを横並びにする */
   display: flex; 
@@ -47,6 +65,7 @@ header .nav .menu li a{
  font-weight:bold;
  text-decoration: none;
 }
+
 
 
 .hedderlogo{
@@ -72,12 +91,54 @@ ol{
 
 .maintitle{
   color:#000000;
-  font-size:50px;
+  font-size:200px;
   font-weight:bold;
   text-align:  center;
   background: linear-gradient(transparent 50%, #bde4f7 50%);
   padding: 0 0.1em;
 }
+
+
+/*フッター*/
+footer{
+  background-color: #ffffff;
+}
+footer a{
+	color:#000000;
+}
+
+
+/*目次*/
+.mokuji{
+  color:#000000;
+  font-size:70px;
+  font-weight:bold;
+  text-decoration: none;
+  left: 10%;
+}
+.box a{
+	color:#535353;
+}
+
+.box{
+  color: #668ad8;/*文字色*/
+  border: dashed 2px #668ad8;/*破線 太さ 色*/
+  background: #f1f8ff; /*背景色*/
+  padding: 0.5em 0.5em 0.5em 2em;
+  text-decoration: none;
+}
+
+.box li{
+  line-height: 1.5;
+  padding: 0.5em 20;
+  color:#000000;
+  font-size:40px;
+  font-weight:bold;
+  list-style: none;
+  text-decoration: none;
+}
+
+
 
 /*背景画像*/
 body{
@@ -112,27 +173,65 @@ body{
   font-size:35px;
   font-weight:bold;
   line-height:150%;
-  
+
  }
  .ocwotoosite{
    color:#000000;
    font-size:25px;
    font-weight: normal;
    line-height:150%;
+   padding: 0.5em 1em;
+   margin: 2em 0;
+   color: #252525;
+   background: #e4fcff;/*背景色*/
+   box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);/*影*/
   }
+
+
 
   .oc1{
     color:#000000;
     font-size:30px;
     font-weight:bold;
     line-height:150%;
+    position: relative;
+    padding-left: 1.2em;/*アイコン分のスペース*/
+    line-height: 1.4;
   }
+  .oc1:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f14a";/*アイコンのユニコード*/
+    font-weight: 900;
+    position: absolute;/*絶対位置*/
+    font-size: 1em;/*サイズ*/
+    left: 0;/*アイコンの位置*/
+    top: 0;/*アイコンの位置*/
+    color: #5ab9ff; /*アイコン色*/
+    font-weight: 900;
+  }
+
  .oc2{
    color:#000000;
    font-size:30px;
    font-weight:bold;
    line-height:150%;
+   position: relative;
+   padding-left: 1.2em;/*アイコン分のスペース*/
+   line-height: 1.4;
   }
+  .oc2:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f14a";/*アイコンのユニコード*/
+    font-weight: 900;
+    position: absolute;/*絶対位置*/
+    font-size: 1em;/*サイズ*/
+    left: 0;/*アイコンの位置*/
+    top: 0;/*アイコンの位置*/
+    color: #5ab9ff; /*アイコン色*/
+    font-weight: 900;
+  }
+
+
 
 
 /*来場者の声*/
@@ -204,7 +303,7 @@ body{
  /*トップに戻るホバー*/
  .btn-box{
   position: absolute;
-  top: 393%;
+  top: 500%;
   left: 50%;
   transform: translate(-50%, -50%);
   margin: 0;
@@ -217,17 +316,17 @@ body{
    line-height: 78px;
    font-size: 24px;
    text-decoration: none;
-   background-color: #f15a4a;
-   color: #fff;
+   background-color: #005bac;
+   color: #ffffff;
    text-align: center;
    cursor: pointer;
    transition: 0.5s all;
  }
  
  .btn:hover {
-   background-color: #ffffff;
-   border: 2px solid #f15a4a;
-   color: #f15a4a;
+   background-color: #fff100;
+   border: 2px solid #005bac;
+   color: #005bac;
  }
 
 /*概要試し*/
@@ -268,9 +367,6 @@ text-align:  center;
 }
 
 
-footer{
-  background-color: #005bac;
-}
 
 .lion { 
   margin-right: 20px; /* lion 側の右に余白を追加 */ 
@@ -292,9 +388,11 @@ footer{
 .lion{
   text-align: left;  /* 文章を左寄せする(※) */
   float: left;     /* 左端に寄せて、後続を右側へ回り込ませる */
+  z-index: 0;
 }
 .img-float  {
   text-align: right; /* 文章を右寄せする */
+  z-index: 0;
 }
 
 /*リオン君関連*/
@@ -304,8 +402,10 @@ footer{
      color: #000000;
      font-weight: 1000;
      text-align:  center;
-     border-bottom: 5px solid #005bac ;
-   }
+      z-index: 0;
+    }
+
+
 
    /*リオン君吹き出し*/
    .box23{
