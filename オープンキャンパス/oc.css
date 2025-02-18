@@ -303,7 +303,7 @@ body{
  /*トップに戻るホバー*/
  .btn-box{
   position: absolute;
-  top: 500%;
+  top: 590%;
   left: 50%;
   transform: translate(-50%, -50%);
   margin: 0;
@@ -368,6 +368,15 @@ text-align:  center;
 
 
 
+table {
+  padding: 0.5em 1em;
+  margin: 2em 0;
+  color: #FFF;
+  background: #6eb7ff;
+  border-bottom: solid 6px #ffffff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 9px;
+}
 .lion { 
   margin-right: 20px; /* lion 側の右に余白を追加 */ 
 } 
