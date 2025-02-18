@@ -102,10 +102,38 @@ ol{
 /*フッター*/
 footer{
   background-color: #ffffff;
+  width: 100%; 
+  padding: 40px 40px; 
+  display: flex; 
 }
 footer a{
 	color:#000000;
 }
+
+
+.menba1{
+  /* ロゴとメニューを横並びにする */
+  display: flex; 
+  padding:0;
+  list-style:none;
+  justify-content:space-between;
+  justify-content: flex-end;
+}
+
+footer .menba .menba1 li {
+  list-style: none; 
+  margin-left: 40px;
+  justify-content: flex-end;
+}
+
+footer .menba .menba1 li {
+  color: #000000;
+  font-weight:bold;
+  text-decoration: none;
+  justify-content: flex-end;
+}
+
+
 
 
 /*目次*/
@@ -190,7 +218,7 @@ body{
 
 
   .oc1{
-    color:#000000;
+    color:#4d4d4d;
     font-size:30px;
     font-weight:bold;
     line-height:150%;
@@ -211,7 +239,7 @@ body{
   }
 
  .oc2{
-   color:#000000;
+   color:#4d4d4d;
    font-size:30px;
    font-weight:bold;
    line-height:150%;
@@ -289,21 +317,21 @@ body{
 
 
 
- .img-float-left{
-   float:left
-   padding 0 !important;
-   margin:0 1em 1em 0;
- }
- .img-float-left img{
-   display:block;
- }
+.img-float-left{
+  float:left
+  padding 0 !important;
+  margin:0 1em 1em 0;
+}
+.img-float-left img{
+  display:block;
+}
 
 
 
  /*トップに戻るホバー*/
  .btn-box{
   position: absolute;
-  top: 590%;
+  top: 505%;
   left: 50%;
   transform: translate(-50%, -50%);
   margin: 0;
@@ -324,7 +352,7 @@ body{
  }
  
  .btn:hover {
-   background-color: #fff100;
+   background-color: #ffffff;
    border: 2px solid #005bac;
    color: #005bac;
  }
@@ -368,15 +396,7 @@ text-align:  center;
 
 
 
-table {
-  padding: 0.5em 1em;
-  margin: 2em 0;
-  color: #FFF;
-  background: #6eb7ff;
-  border-bottom: solid 6px #ffffff;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
-  border-radius: 9px;
-}
+/*オープンキャンパスの様子*/
 .lion { 
   margin-right: 20px; /* lion 側の右に余白を追加 */ 
 } 
@@ -391,6 +411,31 @@ table {
   padding: 10%;
 }
 
+.yousu{
+  font-size: 80px;
+  color: #454545;
+  text-shadow: 3px 3px #81bedb;
+  text-align: center;
+}
+.ocyousu{
+  padding:0.5em 1;
+  margin: 0em 0;
+  color: #FFF;
+  background: #ffffff;
+  border-bottom: solid 6px #ffffff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 9px;
+  align-items: center;
+}
+
+.img-float-left{
+  float:left
+  padding 0 !important;
+  margin:0 1em 1em 0;
+}
+.img-float-left img{
+  display:block;
+}
 
 
 /*オープンキャンパスの様子画像配置*/
@@ -404,18 +449,9 @@ table {
   z-index: 0;
 }
 
+
+
 /*リオン君関連*/
-   .yousu{
-     font-size: 50px;
-     bottom: 0;
-     color: #000000;
-     font-weight: 1000;
-     text-align:  center;
-      z-index: 0;
-    }
-
-
-
    /*リオン君吹き出し*/
    .box23{
      position: relative;
@@ -450,7 +486,7 @@ table {
       padding:0 !important;
       animation: bound .3s ease infinite alternate;
  }
- @keyframes .bound{
+ @keyframes bound{
    0%    {transform: translateY(0px);}
    100%  {transform: translateY(-10px);}
  }
