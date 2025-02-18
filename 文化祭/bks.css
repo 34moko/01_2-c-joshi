@@ -4,24 +4,51 @@ div {
 ul {
   display: flex;
   justify-content: space-around;
-  text-align: center;}
-  img {
+  text-align: center;
+}
+img {
   image:url(https://fontmeme.com/permalink/250217/35f9010d33d83058aeb8c348f2f5364e.png);        /* 画像のURLを指定       */
   width: 500px;
   margin: 20px;
 }
+
 img {
     image:url(https://fontmeme.com/permalink/250211/6388e929f0ecbf656fa8d8d5376b1e2c.png);         /* 画像のURLを指定       */
     width: 500px
     margin: 20px;
-  }
+}
 
 .container {
     display: flex;
     justify-content: space-around; /* 画像の間に均等に余白を設定 */
 }
 .container img {
-    width: 30%; /* 画像が3つ並ぶように設定 */
+    width: 50px; /* 画像が3つ並ぶように設定 */
+    height: auto;
+}  
+
+.container {
+    display: flex;
+    justify-content: space-around; /* 画像の間に均等に余白を設定 */
+}
+.container img {
+    width: 50%; /* 画像が2つ並ぶように設定 */
+    height: auto;
+}  
+.container {
+    display: flex;
+    justify-content: space-around; /* 画像の間に均等に余白を設定 */
+}
+.container img {
+    width: 50%; /* 画像が3つ並ぶように設定 */
+    height: auto;
+}
+.container {
+    display: flex;
+    justify-content: space-around; /* 画像の間に均等に余白を設定 */
+}
+.container img {
+    width: 50%; /* 画像が1つ並ぶように設定 */
     height: auto;
 }  
 

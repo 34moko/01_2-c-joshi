@@ -103,36 +103,21 @@ ol{
 footer{
   background-color: #ffffff;
   width: 100%; 
-  padding: 40px 40px; 
+  padding: 0px 0px; 
   display: flex; 
 }
 footer a{
 	color:#000000;
 }
 
-
-.menba1{
-  /* ロゴとメニューを横並びにする */
-  display: flex; 
-  padding:0;
-  list-style:none;
-  justify-content:space-between;
-  justify-content: flex-end;
-}
-
-footer .menba .menba1 li {
-  list-style: none; 
-  margin-left: 40px;
-  justify-content: flex-end;
-}
-
-footer .menba .menba1 li {
-  color: #000000;
+.seisaku{
+  text-align: right;
+  left: 300px;
+  color:#535353;
+  font-size:20px;
   font-weight:bold;
   text-decoration: none;
-  justify-content: flex-end;
 }
-
 
 
 
@@ -490,6 +475,7 @@ text-align:  center;
    0%    {transform: translateY(0px);}
    100%  {transform: translateY(-10px);}
  }
+ 
 
 /*試しし*/
 
