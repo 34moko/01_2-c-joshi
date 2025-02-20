@@ -1,7 +1,3 @@
-
-.html {
-   background-color: rgba(255, 255, 255, 0); /* 周囲の背景色 */
-}
 /*ローディングアイコン*/
 .loading-icon {
   box-sizing: border-box;
@@ -37,10 +33,13 @@
    padding: 100px;   /* 内側の余白を消す */
 }
 
-section{
+.body{
   margin: 10px 100px 100px 10px ;   /* 外側の余白を30pxに */
-  padding: 100px;   /* 内側の余白を消す */
-  background-color: rgba(255, 255, 255, 0); /* 本文部分の背景色 */
+  padding: 100px;   /* 余白外側*/
+}
+.yohaku{
+  margin: 10px 100px 100px 10px ;   /* 外側の余白を30pxに */
+  padding: 100px;   /* 余白外側*/
 }
 
 /*リンク*/
@@ -51,11 +50,10 @@ a{
   text-decoration: none; 
   color: #000000;
 }
-
-/*リンクホバー*/
-.rink a:hover{
-  color : #005bac;
+.rink a{
+  color : #000000;
 }
+/*リンクホバー*/
 .box a:hover{
   color : #005bac;
 }
@@ -111,29 +109,6 @@ header .nav .menu li a:hover:after {
 }
 
 .box a:hover:after {
-  transform: translate(0, 0);
-}
-/*フッターリンクアニメーション*/
-.rink a {
-  display: inline-block;
-  position: relative;
-  overflow: hidden;
-}
-
-.rink a:after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  top: 52px;
-  width: 100%;
-  height: 3px;
-  background-color: #005bac;
-  transform: translate(-100%, 0);
-  transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.4s;
-  content: "";
-}
-
-.rink a:hover:after {
   transform: translate(0, 0);
 }
 /*ヘッダー*/
@@ -217,23 +192,28 @@ ol{
 
 /*フッター*/
 footer{
-  background-color: #ffffff;
+  background-color: #b8b8b8;
   width: 100%; 
-  padding: 0px 0px; 
+  height: 0%;
   display: flex; 
-  margin: 0;
+  padding: 0;
+  margin-bottom: 0;
+  margin-top: 0;
 }
-footer a{
-	color:#000000;
+.rink{
+  text-align: left;
+  margin-bottom: 0%;
+  padding-top: 40px;  
 }
 
-.seisaku{
-  text-align: right;
-  left: 300px;
+.seisakusya{
+  align-items: right;
+  padding-left:970px;
   color:#535353;
   font-size:20px;
   font-weight:bold;
   text-decoration: none;
+  margin-bottom: 0%;
 }
 
 
