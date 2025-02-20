@@ -133,7 +133,6 @@ header .nav .menu li a:hover:after {
   content: "";
 }
 
-
 .rink a:hover:after {
   transform: translate(0, 0);
 }
