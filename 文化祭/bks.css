@@ -19,6 +19,12 @@ img {
     margin: 20px;
 }
 
+.jikanwari {
+  width: 330px;
+  height: 220px;
+  object-fit: cover;
+}
+
 .container {
     display: flex;
     justify-content: space-around; /* 画像の間に均等に余白を設定 */
@@ -157,18 +163,18 @@ img {
   }
   #footer .primary {
     padding: 40px 20px;
-    background: #333;
+    background: #3f47a2;
   }
   #footer .secondary {
     display: flex;
     padding: 40px 20px;
-    background: #222;
+    background: #65bef1;
   }
   
   @media screen and (max-width: 767px) {
     #footer .primary {
       padding: 20px 20px;
-      background: #333;
+      background: #3764b8;
     }
     #footer .secondary {
       display: block;
@@ -312,4 +318,7 @@ img {
   body {
     margin: 0;
     padding: 0;
+  }
+  .secondary {
+    text-align: center;
   }
